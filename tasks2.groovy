@@ -32,8 +32,21 @@ switch(num){
 		}
 		else{println("Incorrect simbol!");}
 		
+		print("Result: "+summ);
+	
+	break;
+	
+	default:
+	
+		println "This task is not completed or not on the list" 
 		
-		class Calculator {
+    break
+	
+	}
+	
+	// Clases that are used for task calculation
+	
+	class Calculator {
 		
 			public static int addition(int x,int y) {
 			return x+y;
@@ -52,14 +65,3 @@ switch(num){
 			}
 			
 		}
-		
-		print("Result: "+summ);
-	
-	break;
-	
-	default:
-	
-		println "This task is not completed or not on the list" 
-		
-    break
-	}
