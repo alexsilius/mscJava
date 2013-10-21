@@ -36,6 +36,14 @@ switch(num){
 	
 	break;
 	
+	case 2:
+	
+	UnitMatrix myTest = new UnitMatrix();
+	myTest.setSize(5);
+	myTest.print();
+	
+	break;
+	
 	default:
 	
 		println "This task is not completed or not on the list" 
@@ -46,6 +54,8 @@ switch(num){
 	
 	// Clases that are used for task calculation
 	
+	
+	/* Class for case 1 */
 	class Calculator {
 		
 			public static int addition(int x,int y) {
@@ -65,3 +75,34 @@ switch(num){
 			}
 			
 		}
+		
+	/* class for case 2 */
+	class UnitMatrix {
+		int size;
+
+		 void setSize(int newSize) {
+		 this.size = newSize;
+		 }
+
+		void print() {
+		
+			// |1| When loop starts 
+			for (int i = 0; i < size; i++) {
+				// |1| i is 1 over here 
+				// |2| When loop starts 
+				for (int j = 0; j < this.size; j++) {
+				// |2| i is 1 over here
+					if (i == j) {
+						println("1 ");
+					} 
+					else{
+						println("0 ");
+					}
+				} 
+				println "";
+			}
+			
+			
+			
+		} 
+}
