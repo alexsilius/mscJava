@@ -50,6 +50,35 @@ switch(num){
 		
     break
 	
+	case 3:
+		print "Please define number of years: "
+		int y = Integer.parseInt(System.console().readLine());
+		print "Please define amount:"
+		int c = Integer.parseInt(System.console().readLine());
+		print "Please define rate: %"
+		double r = Double.parseDouble(System.console().readLine());
+		
+		
+		double total 		= c *(1 + (r/100));
+		double yearly 		= (total - c)/y;
+		int yearsToPay;
+		
+		while(Math.abs(total - c) < 10E-6){
+			total = total - yearly;
+			yearsToPay++
+		}
+		
+		/*
+		for(i = 0; i < y; i++){
+			m
+		}
+		*/
+
+		println "Total amount to be paid back: "+total;
+		println "The money to be paid every year: "+ yearly;
+		println "The number of years before the interest is paid and only the initial capital remains: "+yearsToPay
+		break;
+	
 	}
 	
 	// Clases that are used for task calculation
